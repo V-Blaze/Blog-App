@@ -1,10 +1,10 @@
 class Post < ApplicationRecord
-  belongs_to :user
+  belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes
 
   def update_post_user_counter
-    user.increment!(:posts_counter)
+    author.increment!(:posts_counter)
   end
 
   def five_most_recent_comments
