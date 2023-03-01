@@ -1,75 +1,75 @@
 .user_posts_container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .user_post_section {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .user_post_section_image {
-    width: 72px;
-    height: 72px;
-    border: solid black 1px;
-    border-radius: 5px;
+  width: 72px;
+  height: 72px;
+  border: solid black 1px;
+  border-radius: 5px;
 }
 
 .user_post_details_info {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    border: solid black 1px;
-    border-radius: 5px;
-    padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0 0.5rem;
 }
 
 .user_post_section_title {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .user_post_details_info span {
-    align-self: end;
+  align-self: end;
 }
 
 .user_posts_main {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .user_posts_info {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    border: solid black 1px;
-    border-radius: 5px;
-    padding: 0.5rem;
-    width: 93%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 93%;
 }
 
 .user_post_title {
-    margin-top: 0;
-    margin-bottom: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
 }
 
 .user_posts_comments_likes {
-    align-self: end;
+  align-self: end;
 }
 
 .user_comments_info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border: solid black 1px;
-    border-radius: 5px;
-    padding: 0.5rem;
-    width: 93%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 93%;
 }
 
 .user_comment_div {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }

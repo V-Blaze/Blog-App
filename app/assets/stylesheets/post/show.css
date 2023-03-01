@@ -1,34 +1,34 @@
 .post_section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .post_info {
-    display: flex;
-    flex-direction: column;
-    border: solid black 1px;
-    border-radius: 5px;
-    padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .post_title {
-    margin: 0;
+  margin: 0;
 }
 
 .post_comments_likes_count {
-    align-self: end;
+  align-self: end;
 }
 
 .post_comments {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border: solid black 1px;
-    border-radius: 5px;
-    padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .post_comments_details {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
