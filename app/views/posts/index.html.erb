@@ -1,1 +1,28 @@
-<h2>Here is a list of all the posts from this user</h2>
+<div>
+    <div>
+        <%= image_tag @user.photo %>
+        <div>
+            <h2><%= @user.name %></h2>
+            <span>Number od posts: <%= @user.posts.count %> </span>
+        </div>
+    </div>
+    <div>
+        <%- @user.posts.each do |post| -%>
+            <div>
+                <h3><%= post.title %></h3>
+                <p><%= post.text %></p>
+                <div>
+                    <span>Comments: <%= post.comments_counter %></span>
+                    <span>Likes: <%= post.likes_counter %></span>
+                </div>
+            </div>
+            <div>
+                <% post.comments.each do |comment| %>
+                    <span><%= comment.author.name  %></span>
+                    <span><%= comment.text  %></span>
+                <%-end-%>
+            </div>
+            <a href="/users/<%= @user.id %>/posts/<%= post.id %>" class="">view post</a>
+        <%-end-%>
+    </div>
+</div>
