@@ -1,8 +1,8 @@
 <%- @user.posts.each do |post| -%>
-    <div>
-        <h3><%= post.title %></h3>
+    <div class="user_details_post_container">
+        <h3 class="user_details_post_tile"><%= post.title %></h3>
         <p><%= post.text %></p>
-        <div>
+        <div class="user_comments_and_likes">
             <span>Comments: <%= post.comments_counter %></span>
             <span>Likes: <%= post.likes_counter %></span>
         </div>
