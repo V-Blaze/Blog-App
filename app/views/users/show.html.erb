@@ -1,1 +1,21 @@
 <h2>Here is all the details about this user</h2>
+<div>
+    <div>
+        <%= image_tag @user.photo %>
+        <div>
+            <h2><%= @user.name %></h2>
+            <span>Number od posts: <%= @user.posts.count %> </span>
+        </div>
+    </div>
+    <div>
+        <h3>Bio</h3>
+        <span>
+            <%= @user.bio %>
+        </span>
+    </div>
+
+    <div>
+        <%= render 'post', posts: @user.posts %>
+    </div>
+    <a href="/users/<%= @user.id %>/posts" class="">See all posts</a>
+</div>
