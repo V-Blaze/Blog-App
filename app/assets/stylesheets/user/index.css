@@ -1,0 +1,33 @@
+.user_main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user_image {
+    width: 72px;
+    height: 72px;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.user_details {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+
+}
+
+.user_title {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.user_details span {
+    align-self: end;
+}

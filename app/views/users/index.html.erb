@@ -1,9 +1,9 @@
 <%-@users.each do |user|-%>
-    <div>
-        <%= image_tag user.photo %>
-        <div>
-            <h2><%= user.name %></h2>
-            <span>Number od posts: <%= user.posts.count %> </span>
+    <div class="user_main">
+        <%= image_tag(user.photo || '', class: "user_image") %>
+        <div class="user_details">
+            <h2 class="user_title"><%= user.name %></h2>
+            <span>Number of posts: <%= user.posts.count %> </span>
             <span><%= link_to 'view', user %></span>
         </div>
     </div>
