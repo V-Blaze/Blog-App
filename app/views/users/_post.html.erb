@@ -1,4 +1,4 @@
-<%- @user.posts.each do |post| -%>
+<%- @user.three_most_recent_post.each do |post| -%>
     <div class="user_details_post_container">
         <h3 class="user_details_post_tile"><%= post.title %></h3>
         <p><%= post.text %></p>
