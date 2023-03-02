@@ -1,1 +1,20 @@
-<h2>Here is all the details about this user</h2>
+<div class="user_container">
+    <div class="user_section">
+        <%= image_tag(@user.photo || '', class: "user_section_image") %>
+        <div class="user_details_info">
+            <h2 class="user_section_title"><%= @user.name %></h2>
+            <span>Number of posts: <%= @user.posts.count %> </span>
+        </div>
+    </div>
+    <div class="user_bio_section">
+        <h3 class="user_bio_title">Bio</h3>
+        <span>
+            <%= @user.bio %>
+        </span>
+    </div>
+
+    <div class="user_details_post">
+        <%= render 'post', posts: @user.three_most_recent_post %>
+    </div>
+    <a href="/users/<%= @user.id %>/posts" class="user_details_see_btn">See all posts</a>
+</div>

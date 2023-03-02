@@ -1,1 +1,30 @@
-<h2>Here is a list of all the posts from this user</h2>
+<div class="user_posts_container">
+    <div class="user_post_section">
+        <%= image_tag(@user.photo || '', class: "user_post_section_image") %>
+        <div class="user_post_details_info">
+            <h2 class="user_post_section_title"><%= @user.name %></h2>
+            <span>Number of posts: <%= @user.posts.count %> </span>
+        </div>
+    </div>
+    <div class="user_posts_main">
+        <%- @user.posts.each do |post| -%>
+            <div class="user_posts_info">
+                <h3 class="user_post_title"><%= post.title %></h3>
+                <p><%= post.text %></p>
+                <div class="user_posts_comments_likes">
+                    <span>Comments: <%= post.comments_counter %></span>
+                    <span>Likes: <%= post.likes_counter %></span>
+                </div>
+                <a href="/users/<%= @user.id %>/posts/<%= post.id %>" class="">view post</a>
+            </div>
+            <div class="user_comments_info">
+                <% post.five_most_recent_comments.each do |comment| %>
+                    <div class="user_comment_div">
+                        <span><%= comment.author.name  %>: </span>
+                        <span><%= comment.text  %></span>
+                    </div>
+                <%-end-%>
+            </div>
+        <%-end-%>
+    </div>
+</div>
