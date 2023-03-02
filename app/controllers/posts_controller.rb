@@ -17,12 +17,11 @@ class PostsController < ApplicationController
       title: params[:post][:title],
       text: params[:post][:text]
     )
-    
+
     if @post.save
       redirect_to users_path
     else
       render :new
     end
   end
-
 end

@@ -1,0 +1,4 @@
+<%= form_with url: "/users/#{@post.author.id}/posts/#{@post.id}/likes" do |f| %>
+    <%= f.submit 'Like post' %>
+<%end%>
+

@@ -75,7 +75,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
-# gem "bootstrap_form", "~> 5.1"
-# gem 'bootstrap', '~> 5.2.2'
-# gem 'jquery-rails'
