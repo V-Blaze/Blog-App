@@ -1,4 +1,4 @@
-<%= form_with model: @comments, url: user_post_comments_path do |f| %>
+<%= form_with model: @comments, url: user_post_comments_path, scope: :comment do |f| %>
 
 <div>
   <div>
