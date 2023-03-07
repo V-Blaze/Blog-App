@@ -43,12 +43,12 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
 <!-- > Add a link to your deployed project. -->
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
@@ -62,23 +62,19 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-```
-Install Ruby
-```
-```
-Install Rails
-```
-```
-Install Postgresql
+```sh
+ gem install rails
 ```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-```
+```sh
  git clone https://github.com/V-Blaze/Blog-App.git
 ```
+
+
 
 ### Install
 
@@ -110,7 +106,7 @@ To run tests, run the following command:
 rspec spec --format documentation
 ```
 
-### Deployment
+<!-- ### Deployment
 
 You can deploy this project using:
 
@@ -118,18 +114,24 @@ You can deploy this project using:
 
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
 
 <!-- > Mention all of the collaborators of this project. -->
-👤 Valentine Blaze
+👤 **Valentine Blaze**
 
 - GitHub: [@V-blaze](https://github.com/V-Blaze)
 - Twitter: [@blaze_valentine](https://twitter.com/blaze_valentine)
 - LinkedIn: [@valentine-blaze](https://www.linkedin.com/in/valentine-blaze/)
+
+👤 **Eva-Lavinia Bucur**
+
+- GitHub: [@BucurEva87](https://github.com/BucurEva87)
+- Twitter: [@BucurEva](https://twitter.com/BucurEva)
+- LinkedIn: [Eva-Lavinia Bucur](https://www.linkedin.com/in/eva-lavinia-bucur)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
