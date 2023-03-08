@@ -72,10 +72,6 @@ RSpec.feature 'Users#index view', type: :feature, js: true do
       expect(Post.find_by(title: post_title).likes_counter).to eq number_of_likes
     end
   end
-
-  # scenario 'displaying pagination button on the page' do # (no pagination button)
-  #   expect(page).to have_selector('.user-posts-more button')
-  # end
 end
 
 RSpec.feature 'Users#index view', type: :feature, js: true do
@@ -93,9 +89,4 @@ RSpec.feature 'Users#index view', type: :feature, js: true do
       visit "#{base_url}/users/#{@user.id}/posts"
     end
   end
-
-  # scenario "back button clicking redirects to user's page" do # (no back button)
-  #   page.find(:css, '.btn-back').click
-  #   expect(page).to have_current_path("#{base_url}/users/#{random_number}")
-  # end
 end

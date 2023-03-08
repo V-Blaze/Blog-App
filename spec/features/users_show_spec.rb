@@ -82,10 +82,4 @@ RSpec.feature 'Users#index view', type: :feature, js: true do
 
     expect(page).to have_current_path("#{base_url}/users/#{random_number}/posts")
   end
-
-  # scenario "clicking on Back to user button redirects me to user's page" do # (no back button)
-  #   page.find('.btn-back').click
-
-  #   expect(page).to have_current_path("#{base_url}/users/#{random_number}")
-  # end
 end
