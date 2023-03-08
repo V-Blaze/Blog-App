@@ -1,6 +1,6 @@
 <%- @user.three_most_recent_post.each do |post| -%>
     <div class="user_details_post_container">
-        <h3 class="user_details_post_tile"><%= post.title %></h3>
+        <h3 class="user_details_post_tile"><%= link_to post.title, user_post_path(post.author.id, post.id) %></h3>
         <p><%= post.text %></p>
         <div class="user_comments_and_likes">
             <span>Comments: <%= post.comments_counter %></span>
