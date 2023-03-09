@@ -88,6 +88,6 @@ test:
 production:
   <<: *default
   database: Blog_App_development
-  host: localhost
-  username: postgres
-  password: val6586
+  # host: localhost
+  # username: postgres
+  # password: val6586

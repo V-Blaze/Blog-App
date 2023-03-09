@@ -1,0 +1,34 @@
+.sign_up_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signup_field input {
+  width: 25rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.signup_field textarea {
+  width: 25rem;
+  height: 6rem;
+}
+
+.sign_up_btn {
+  margin-top: 1.2rem;
+  align-self: center;
+  width: 100%;
+}
+
+.sign_up_btn input {
+  align-self: center;
+  width: 100%;
+}

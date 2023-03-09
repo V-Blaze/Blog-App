@@ -8,9 +8,9 @@
 
 # Create some users
 User.create!([
-  { name: "Tom", photo: "https://randomuser.me/api/portraits/men/60.jpg", 
+  { name: "Tom", email: 'test6@test.com', password: '123456', password_confirmation: '123456' photo: "https://randomuser.me/api/portraits/men/60.jpg", 
     bio: "Teacher from Mexico.", posts_counter: 0 },
-  { name: "Lilly", photo: "https://randomuser.me/api/portraits/women/56.jpg", 
+  { name: "Lilly", email: 'test7@test.com', password: '123456', password_confirmation: '123456' photo: "https://randomuser.me/api/portraits/women/56.jpg", 
     bio: "Teacher from Poland.", posts_counter: 0 }
  ])
 # Create some posts for Tom and Lilly
