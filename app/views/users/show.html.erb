@@ -17,4 +17,5 @@
         <%= render 'post', posts: @user.three_most_recent_post %>
     </div>
     <a href="/users/<%= @user.id %>/posts" class="user_details_see_btn">See all posts</a>
+    <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
 </div>

@@ -1,0 +1,34 @@
+.login_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_field input {
+  width: 25rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.remember_field {
+  display: none;
+}
+
+.login_button {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.login_button input {
+  width: 100%;
+  align-self: center;
+}
