@@ -1,8 +1,10 @@
 .user_main {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  width: 80%;
 }
 
 .user_image {

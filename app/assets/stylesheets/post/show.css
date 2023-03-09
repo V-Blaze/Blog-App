@@ -1,6 +1,7 @@
 .post_section {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .post_info {
@@ -30,5 +31,9 @@
 
 .post_comments_details {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: solid black 1px;
+  border-radius: 5px;
 }
