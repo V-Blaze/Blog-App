@@ -1,13 +1,28 @@
 .user_container {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.user_hero {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: #B2BEB5;
+  border: solid black 1px;
+  border-radius: 5px;
 }
 
 .user_section {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .user_section_image {
@@ -50,6 +65,12 @@
 
 .user_details_post {
   width: 93%;
+}
+
+.user_details_post .recent_title {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .user_details_post_container {

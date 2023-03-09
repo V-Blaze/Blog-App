@@ -1,6 +1,7 @@
 .post_section {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .post_info {

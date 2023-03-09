@@ -1,6 +1,8 @@
 .user_posts_container {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  justify-content: center;
 }
 
 .user_post_section {
@@ -38,6 +40,8 @@
 
 .user_posts_main {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .user_posts_info {
@@ -53,6 +57,13 @@
 .user_post_title {
   margin-top: 0;
   margin-bottom: 0.2rem;
+}
+
+.top_comments {
+  text-align: center;
+  align-self: center;
+  text-decoration: underline;
+  margin-top: 0.8rem;
 }
 
 .user_posts_comments_likes {

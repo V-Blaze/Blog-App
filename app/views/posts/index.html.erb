@@ -17,6 +17,7 @@
                 </div>
                 <a href="/users/<%= @user.id %>/posts/<%= post.id %>" class="">view post</a>
             </div>
+                <span class="top_comments">Top five comments</span>
             <div class="user_comments_info">
                 <% post.five_most_recent_comments.each do |comment| %>
                     <div class="user_comment_div">
