@@ -16,6 +16,11 @@
                     <span>Likes: <%= post.likes_counter %></span>
                 </div>
                 <a href="/users/<%= @user.id %>/posts/<%= post.id %>" class="">view post</a>
+                <div>
+                    <% if can? :destroy, post %>
+                        <%= button_to 'Delete post', user_post_path(post.author, post), method: :delete, data: { confirm: 'Are you sure?' } %>
+                    <% end %>
+                </div>
             </div>
                 <span class="top_comments">Top five comments</span>
             <div class="user_comments_info">
@@ -23,6 +28,11 @@
                     <div class="user_comment_div">
                         <span><%= comment.author.name  %>: </span>
                         <span><%= comment.text  %></span>
+                    </div>
+                    <div>
+                        <% if can? :destroy, comment %>
+                            <%= button_to 'Delete comment', user_post_comment_path(comment.author, post, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+                        <% end %>
                     </div>
                 <%-end-%>
             </div>

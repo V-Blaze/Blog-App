@@ -13,7 +13,11 @@
                 <%= @user.bio %>
             </span>
             <br>
-            <%= link_to "Create Post", new_user_post_path(@user) %>
+            <div>
+                <% if user_signed_in? && current_user.id == @user.id %>
+                    <%= link_to "Create Post", new_user_post_path(@user) %>
+                <% end %>
+            </div>
         </div>
     </div>
 

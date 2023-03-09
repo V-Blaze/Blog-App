@@ -74,7 +74,7 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    cancan (1.6.10)
+    cancancan (3.5.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -272,7 +272,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  cancan
+  cancancan
   capybara
   debug
   devise

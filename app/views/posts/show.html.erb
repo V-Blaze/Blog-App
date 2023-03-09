@@ -7,12 +7,24 @@
         </div>
         <p class="post_text"><%= @post.text %></p>
         <%= render 'likes/new_like', local: {post: @post} %>
+        <div>
+            <% if can? :destroy, @post %>
+                <%= button_to 'Delete post', user_post_path(@post.author, @post), method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+        </div>
     </div>
     <div class="post_comments">
         <% @post.comments.each do |comment| %>
             <div class="post_comments_details">
-                <span><%= comment.author.name  %>: </span>
-                <span><%= comment.text  %></span>
+                <div>
+                    <span><%= comment.author.name  %>: </span>
+                    <span><%= comment.text  %></span>
+                </div>
+                <div>
+                    <% if can? :destroy, comment %>
+                        <%= button_to 'Delete comment', user_post_comment_path(comment.author, @post, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+                    <% end %>
+                </div>
             </div>
         <%-end-%>
     </div>
